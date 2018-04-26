@@ -74,11 +74,11 @@ window.onload = function () {
             case "everton":
                 showImage.src = "assets/images/everton.png";
                 break;
-            case "liverpool":
+                case "liverpool":
                 showImage.src = "assets/images/liverpool.png";
                 break;
                 case "swansea":
-                showImage.src = "assets/images/swansea.png";
+                showImage.src = "assets/images/swan.png";
                 break;
                 case "chelsea":
                 showImage.src = "assets/images/chelsea.png";
