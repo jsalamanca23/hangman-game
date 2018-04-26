@@ -92,7 +92,7 @@ window.onload = function () {
                 case "newcastle-united":
                 showImage.src ="assets/images/newcastle.png";
                 break;
-            console.log("sorry");
+            console.log("ignore");
         }
 
         }
