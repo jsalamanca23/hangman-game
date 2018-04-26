@@ -98,11 +98,6 @@ window.onload = function () {
         }
       }
     }
-  // Nick was saying that the paths are causing a problem. He said I should try providing a path:
-  // 1) relative to the images from the game.js file or...
-  // 2) relative to the images from the index.html because the HTML nodes are the nodes are the ones that are referencing the images.
-
-
 
       // OnClick Function
      check = function () {
@@ -112,10 +107,12 @@ window.onload = function () {
         this.onclick = null;
         for (var i = 0; i < word.length; i++) {
           if (word[i] === geuss) {
-            geusses[i].innerHTML = geuss;
-            counter += 1;
-          } 
-        }
+              geusses[i].innerHTML = geuss;
+              counter += 1;
+    } 
+    
+  
+    }
         var j = (word.indexOf(geuss));
         if (j === -1) {
           lives -= 1;
@@ -124,8 +121,8 @@ window.onload = function () {
         } else {
           comments(word);
         }
-      }
-    }
+        }
+        }
     
       
     // Answers 
@@ -151,12 +148,12 @@ window.onload = function () {
       space = 0;
       result();
       comments(word);
-    }
+      }
   
   
   
   
-    play();
+      play();
     
   
           
@@ -165,7 +162,7 @@ window.onload = function () {
     
 
   
-  }
+     }
   
   
   
