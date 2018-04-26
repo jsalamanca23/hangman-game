@@ -11,6 +11,7 @@ window.onload = function () {
     var lives ;             // Lives
     var space;              // Number of spaces in word '-'
     var showLives = document.getElementById("mylives");
+    var showImage = document.getElementById("myImage");
     
   
 
@@ -57,7 +58,8 @@ window.onload = function () {
     }
     
     // Show lives
-     comments = function () {
+     comments = function (word) {
+      console.log(word);
       showLives.innerHTML = "You have " + lives + " lives";
       if (lives < 1) {
         showLives.innerHTML = "Game Over";
@@ -65,6 +67,48 @@ window.onload = function () {
       for (var i = 0; i < geusses.length; i++) {
         if (counter + space === geusses.length) {
           showLives.innerHTML = "You Win!";
+          switch(word) {
+            case "manchester":
+              showImage.src = "/Users/junior/hangman-game/assets/images/MU.png";
+              break;
+            case "everton":
+                showImage.src = "/Users/junior/hangman-game/assets/images/everton.png";
+                break;
+            case "liverpool":
+                showImage.src = "/Users/junior/hangman-game/assets/images/liverpool.png";
+                break;
+                case "swansea":
+                showImage.src = "/Users/junior/hangman-game/assets/images/swansea.png";
+                break;
+                case "chelsea":
+                showImage.src = "/Users/junior/hangman-game/assets/images/chelsea.png";
+                break;
+                case "hull":
+                showImage.src = "#";
+                break;
+                case "manchester-city":
+                showImage.src = "/Users/junior/hangman-game/assets/images/mancity.png";
+                break;
+                case "newcastle-united":
+                showImage.src ="#";
+                break;
+                case "milan":
+                showImage.src = "#";
+                break;
+                case "madrid":
+                showImage.src = "#";
+                break;
+                case "amsterdam":
+                showImage.src = "#";
+                break;
+                case "prague":
+                showImage.src = "#";
+                break;
+           
+                default:
+            console.log("sorry");
+        }
+
         }
       }
     }
@@ -84,10 +128,10 @@ window.onload = function () {
         var j = (word.indexOf(geuss));
         if (j === -1) {
           lives -= 1;
-          comments();
-          animate();
+          comments(word);
+
         } else {
-          comments();
+          comments(word);
         }
       }
     }
@@ -96,8 +140,8 @@ window.onload = function () {
     // Answers 
     play = function () {
       categories = [
-          ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united"],
-          ["manchester", "milan", "madrid", "amsterdam", "prague"]
+          ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united",
+          "manchester", "milan", "madrid", "amsterdam", "prague"]
       ];
   
 
@@ -115,8 +159,7 @@ window.onload = function () {
       counter = 0;
       space = 0;
       result();
-      comments();
-      canvas();
+      comments(word);
     }
   
   
@@ -124,26 +167,13 @@ window.onload = function () {
   
     play();
     
-    // Hint
-  
-      hint.onclick = function() {
   
           
       
   
-      var catagoryIndex = categories.indexOf(chosenCategory);
-      var hintIndex = chosenCategory.indexOf(word);
-      
-    };
+    
+
   
-     // Reset
-  
-    document.getElementById('reset').onclick = function() {
-      correct.parentNode.removeChild(correct);
-      letters.parentNode.removeChild(letters);
-      context.clearRect(0, 0, 400, 400);
-      play();
-    }
   }
   
   
