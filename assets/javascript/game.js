@@ -84,28 +84,14 @@ window.onload = function () {
                 showImage.src = "/Users/junior/hangman-game/assets/images/chelsea.png";
                 break;
                 case "hull":
-                showImage.src = "#";
+                showImage.src = "/Users/junior/Desktop/hangman-game/assets/images/hull.png";
                 break;
                 case "manchester-city":
                 showImage.src = "/Users/junior/hangman-game/assets/images/mancity.png";
                 break;
                 case "newcastle-united":
-                showImage.src ="#";
+                showImage.src ="/Users/junior/Desktop/hangman-game/assets/images/newcastle.png";
                 break;
-                case "milan":
-                showImage.src = "#";
-                break;
-                case "madrid":
-                showImage.src = "#";
-                break;
-                case "amsterdam":
-                showImage.src = "#";
-                break;
-                case "prague":
-                showImage.src = "#";
-                break;
-           
-                default:
             console.log("sorry");
         }
 
@@ -141,7 +127,7 @@ window.onload = function () {
     play = function () {
       categories = [
           ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united",
-          "manchester", "milan", "madrid", "amsterdam", "prague"]
+          "manchester"]
       ];
   
 
