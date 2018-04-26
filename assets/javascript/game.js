@@ -69,28 +69,28 @@ window.onload = function () {
           showLives.innerHTML = "You Win!";
           switch(word) {
             case "manchester":
-              showImage.src = "/Users/junior/hangman-game/assets/images/MU.png";
+              showImage.src = "assets/images/MU.png";
               break;
             case "everton":
-                showImage.src = "/Users/junior/hangman-game/assets/images/everton.png";
+                showImage.src = "assets/images/everton.png";
                 break;
             case "liverpool":
-                showImage.src = "/Users/junior/hangman-game/assets/images/liverpool.png";
+                showImage.src = "assets/images/liverpool.png";
                 break;
                 case "swansea":
-                showImage.src = "/Users/junior/hangman-game/assets/images/swansea.png";
+                showImage.src = "assets/images/swansea.png";
                 break;
                 case "chelsea":
-                showImage.src = "/Users/junior/hangman-game/assets/images/chelsea.png";
+                showImage.src = "assets/images/chelsea.png";
                 break;
                 case "hull":
-                showImage.src = "/Users/junior/Desktop/hangman-game/assets/images/hull.png";
+                showImage.src = "assets/images/hull.png";
                 break;
                 case "manchester-city":
-                showImage.src = "/Users/junior/hangman-game/assets/images/mancity.png";
+                showImage.src = "assets/images/mancity.png";
                 break;
                 case "newcastle-united":
-                showImage.src ="/Users/junior/Desktop/hangman-game/assets/images/newcastle.png";
+                showImage.src ="assets/images/newcastle.png";
                 break;
             console.log("sorry");
         }
@@ -98,7 +98,12 @@ window.onload = function () {
         }
       }
     }
-  
+  // Nick was saying that the paths are causing a problem. He said I should try providing a path:
+  // 1) relative to the images from the game.js file or...
+  // 2) relative to the images from the index.html because the HTML nodes are the nodes are the ones that are referencing the images.
+
+
+
       // OnClick Function
      check = function () {
       list.onclick = function () {
