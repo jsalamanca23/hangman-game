@@ -3,21 +3,21 @@ simple guessing game.
 
 
 ## Built With:
-*Visual Studio Code
+* Visual Studio Code
 
 
 
 
 ### Content:
-*Css
-*Html
-*JavaScript
+* Css
+* Html
+* JavaScript
 
 
 
 
 
 #### Authors:
-Jose Salamanca 
+* Jose Salamanca 
 
 
