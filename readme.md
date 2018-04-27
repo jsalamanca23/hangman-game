@@ -2,12 +2,16 @@
 simple guessing game.
 
 
+## Built With:
+*Visual Studio Code
 
-## Content:
-Visual Studio Code
-Css
-Html
-JavaScript
+
+
+
+### Content:
+*Css
+*Html
+*JavaScript
 
 
 
