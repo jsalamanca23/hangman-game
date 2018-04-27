@@ -1,19 +1,19 @@
 # Project Title : Soccer Hangman-Game
+simple guessing game.
 
 
 
-
-## Built With:
+## Content:
 Visual Studio Code
 Css
 Html
-Javascript
+JavaScript
 
 
 
 
 
-### Authors:
+#### Authors:
 Jose Salamanca 
 
 
