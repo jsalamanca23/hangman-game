@@ -4,7 +4,7 @@ window.onload = function () {
           'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
           't', 'u', 'v', 'w', 'x', 'y', 'z'];
     
-   var chosenCategory;     // Selected catagory
+    var chosenCategory;     // Selected catagory
     var word ;              // Selected word
     var guess ;             // Geuss
     var geusses = [ ];      // Stored geusses
@@ -19,7 +19,7 @@ window.onload = function () {
       myButtons = document.getElementById('buttons');
       letters = document.createElement('ul');
   
-      for (var i = 0; i < alphabet.length; i++) {
+    for (var i = 0; i < alphabet.length; i++) {
         letters.id = 'alphabet';
         list = document.createElement('li');
         list.id = 'letter';
@@ -45,8 +45,8 @@ window.onload = function () {
         guess = document.createElement('li');
         guess.setAttribute('class', 'guess');
         if (word[i] === "-") {
-          guess.innerHTML = "-";
-          space = 1;
+        guess.innerHTML = "-";
+        space = 1;
         } else {
           guess.innerHTML = "_";
         }
@@ -69,9 +69,9 @@ window.onload = function () {
           showLives.innerHTML = "You Win!";
           switch(word) {
             case "manchester":
-              showImage.src = "assets/images/MU.png";
-              break;
-            case "everton":
+               showImage.src = "assets/images/MU.png";
+                break;
+                case "everton":
                 showImage.src = "assets/images/everton.png";
                 break;
                 case "liverpool":
@@ -100,15 +100,15 @@ window.onload = function () {
     }
 
       // OnClick Function
-     check = function () {
-      list.onclick = function () {
+        check = function () {
+        list.onclick = function () {
         var geuss = (this.innerHTML);
         this.setAttribute("class", "active");
         this.onclick = null;
         for (var i = 0; i < word.length; i++) {
-          if (word[i] === geuss) {
-              geusses[i].innerHTML = geuss;
-              counter += 1;
+        if (word[i] === geuss) {
+        geusses[i].innerHTML = geuss;
+        counter += 1;
     } 
     
   
@@ -118,7 +118,8 @@ window.onload = function () {
           lives -= 1;
           comments(word);
 
-        } else {
+        } 
+        else {
           comments(word);
         }
         }
@@ -152,8 +153,8 @@ window.onload = function () {
   
   
   
-  
-      play();
+
+    play();
     
   
           
